@@ -1,0 +1,11 @@
+{
+    "[astro]": 
+    {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "astro-build.astro-vscode",
+    },
+    "[typescript]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "rvest.vs-code-prettier-eslint",
+    },
+}

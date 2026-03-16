@@ -1,0 +1,156 @@
+@font-face {
+  font-family: 'RobotoMono';
+  src: url(../assets/fonts/Roboto_Mono/RobotoMono-VariableFont_wght.ttf) format('truetype');
+}
+
+#modal-thumbnail {
+    display: flex;
+    margin: 1px 1px
+}
+
+#modal-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.315);
+
+    inset: 0;
+    position: fixed;
+
+    z-index: 10;
+    user-select: auto;
+    pointer-events: auto;
+}
+
+#modal-padding {
+    display: flex;
+    min-width: 50%;
+    height: 80%;
+    border-radius: 4px;
+    background-color: white;
+    padding: 16px 16px;
+}
+
+#modal-content {
+    display: flex;
+    flex-direction: row;
+    font-family: 'RobotoMono', sans-serif;
+    font-weight: normal;
+    color: #752d6f;
+
+    width: 100%;
+    height: 100%;
+
+    overflow: hidden;
+    user-select: auto;
+    pointer-events: auto;
+}
+
+#modal-info-container {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+
+    margin-left: 16px;
+    padding: 8px 8px;
+}
+
+#modal-header {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+    margin-bottom: 16px;
+
+    h2 {
+        display: flex;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    #close-button {
+        margin-top: 4px;
+    }
+}
+
+#description-container {
+    display: flex;
+    flex: 1;
+    flex-direction: column;    
+    background-color: #ebdde7;
+    max-height: fit-content;
+
+    padding: 8px 8px;
+    border-radius: 4px;
+}
+
+#hashtag-container {
+    display: flex;
+    flex-direction: row;
+
+    #hashtag {
+        margin-right: 4px;
+        border-radius: 4px;
+        background-color: #dbb7d9;
+
+        p {
+            margin: 2px 2px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+    }
+}
+
+#description {
+    p {
+        margin-top: 0;
+    }
+}
+
+#media-container {
+    display: flex;
+    flex: 3;
+    flex-direction: column;
+    
+    overflow: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+#main-media {
+    display: flex;
+    height: 100%;
+    width: 100%;
+
+    img, video {
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+    }
+}
+
+#additional-media {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 8px;
+
+    img, video {
+        width: 100%;
+        object-fit: contain;
+    }
+
+    div {
+        margin-bottom: 8px;
+    }
+
+    p {
+        display: flex;
+        justify-content: center;
+        margin: 0px 0px 8px 0px;
+
+        font-size: 12px;
+        text-align: center;
+        color: rgb(141, 141, 141);
+    }
+}

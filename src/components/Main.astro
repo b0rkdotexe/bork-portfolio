@@ -1,0 +1,157 @@
+---
+import GalleryItem from "./GalleryItem.astro";
+import "../styles/Main.css";
+import "../styles/MainMobile.css";
+import { Image } from "astro:assets";
+import Hashtag from "./react/Hashtag"
+
+// import images
+import pfp from "../assets/new_pfp.png";
+import twitter from "../assets/icons/twitter.png";
+import bluesky from "../assets/icons/bluesky.png";
+import instagram from "../assets/icons/instagram.png";
+import itchio from "../assets/icons/itchio.png";
+import testVideo from "../assets/test_video.mp4"
+import testImg from "../assets/sponge.jpg"
+
+
+const gallery = [
+    {
+        data: testVideo,
+        title: "Testing Testing",
+        tags: ["hello", "tags"],
+        description: "Testing Description",
+        isVideo: true,
+        blogLink: "",
+        additionalMedia: [
+            {
+                dataPath: testImg.src,
+                isVideo: false
+            },
+            {
+                dataPath: testVideo,
+                isVideo: true
+            },
+            {
+                dataPath: testImg.src,
+                isVideo: false
+            }
+        ],
+    },
+    {
+        data: testImg,
+        title: "Testing",
+        description: "Testing Description",
+        isVideo: false,
+        blogLink: "",
+        additionalMedia: [
+            {
+                dataPath: testImg.src,
+                isVideo: false,
+                caption: "Test caption for image"
+            },
+            {
+                dataPath: testVideo,
+                isVideo: true
+            },
+            {
+                dataPath: testImg.src,
+                isVideo: false
+            }
+        ],
+    },
+    {
+        data: testImg,
+        title: "Testing",
+        description: "Testing Description",
+        isVideo: false,
+        blogLink: "",
+    },
+    {
+        data: testVideo,
+        title: "Testing",
+        description: "Testing Description",
+        isVideo: true,
+        blogLink: "",
+    },
+    {
+        data: testVideo,
+        title: "Testing",
+        description: "Testing Description",
+        isVideo: true,
+        blogLink: "",
+    },
+    {
+        data: testImg,
+        title: "Testing",
+        description: "Testing Description",
+        isVideo: false,
+        blogLink: "",
+    },
+    {
+        data: testImg,
+        title: "Testing",
+        description: "Testing Description",
+        isVideo: false,
+        blogLink: "",
+    },
+    {
+        data: testVideo,
+        title: "Testing",
+        description: "Testing Description",
+        isVideo: true,
+        blogLink: "",
+    },
+]
+---
+
+<div id="container">
+    <div id="content-grid">
+        <div id="sidebar">
+            <div id="profile-header">
+                <div id="portrait-background">
+                    <Image src={pfp} alt="portrait" width={176} height={176} />
+                </div>
+                <h2>James "Jame" Bryant</h2>
+                <div id="header-about">
+                    <p>Hi, I'm a software developer / game developer / pixel artist</p>
+                </div>
+            </div>
+            <div id="card-content">
+                <div id="info-content">
+                    <h4 id="skills-header">Skills:</h4>
+                    <div id="bullet-list">
+                        <ul>
+                            <li>Unity Development / C#</li>
+                            <li>2D and 3D Asset Creation</li>
+                            <li>Pixel Art / Animation</li>
+                        </ul>
+                        <ul>
+                            <li>Mobile and Web Development</li>
+                            <li>Shaders / Post Processing</li>
+                        </ul>
+                    </div>
+                    <div id="social-links">
+                        <a href="https://www.instagram.com/b0rk.exe/"><Image src={instagram} alt="instagram link" width={20} height={20}></a>
+                        <a href="https://x.com/b0rkdotexe"><Image src={twitter} alt="instagram link" width={20} height={20}></a>
+                        <a href="https://bsky.app/profile/b0rkdotexe.bsky.social"><Image src={bluesky} alt="instagram link" width={20} height={20}></a>
+                        <a href="https://borkdotexe.itch.io/"><Image src={itchio} alt="instagram link" width={20} height={20}></a>
+                    </div>
+                    <p id="email">jame.bryant@borkdotexe.com</p>
+                </div>
+                <div id="footer">
+                    <p>Designed and built in <a href="https://code.visualstudio.com/"><strong>Visual Studio Code</strong></a> by Jame. Built with <a href="https://astro.build//"><strong>Astro</strong></a> and <a href="https://react.dev/"><strong>React</strong></a>. Deployed with <a href="https://docs.github.com/en/pages"><strong>Github Pages</strong></a>.</p>
+                </div>
+            </div>
+        </div>
+        <div id="gallery-container">
+            <div id="grid-container">
+                <div id="gallery-grid">
+                    {gallery.map(item => (
+                        <GalleryItem src={item.data} isVideo={item.isVideo} title={item.title} tags={item.tags} description={item.description} blogLink={item.blogLink} additionalMedia={item.additionalMedia} />
+                    ))}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

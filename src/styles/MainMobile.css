@@ -1,0 +1,86 @@
+@media (max-width: 768px) {
+    #container {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+
+        font-family: 'RobotoMono', sans-serif;
+        font-weight: normal;
+        color: white;
+    }
+
+    #content-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "header"
+        "gallery"
+        "card";
+    }
+
+    #sidebar {
+        display: contents;
+    }
+
+    #profile-header {
+        background-color: white;
+
+        h2 {
+            color: #752d6f;
+            margin: 8px 0px 0px;
+        }
+
+        #header-about {
+        display: flex;
+        height: 100%;
+        margin: 0px 16px;
+
+        p {
+            color: #752d6f;
+            text-align: center;
+        }
+    }
+        
+        grid-area: header;
+    }
+
+    #card-content {
+        grid-area: card;
+        margin: 0px 16px;
+
+        #bullet-list {
+            justify-content: space-around;
+        }
+    }
+
+    #gallery-container {
+        display: flex;
+        flex: 1.5;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        align-items: start;
+        margin-left: 0px;
+        padding-bottom: 16px;
+        border-radius: 4px;
+
+        overflow: scroll;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+
+        grid-area: gallery;
+    }
+
+    #gallery-grid {
+        display: grid;
+        width: 100%;
+        --grid-max-columns: 4;
+        max-width: calc((160px) * var(--grid-max-columns));
+        grid-template-columns: repeat(auto-fit, minmax( 160px, 1fr));
+        grid-auto-flow: dense;
+        gap: 1px;
+
+        justify-content: center;
+    }
+}

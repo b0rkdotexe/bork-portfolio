@@ -1,0 +1,19 @@
+#item-container {
+    display: block;
+    overflow: hidden;
+    cursor: pointer;
+
+    #modal-view {
+        border-radius: 4px;
+        display: block;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: center center;
+        aspect-ratio: 1 / 1;
+    }
+
+    #modal-view:hover {
+        opacity: 0.9;
+    }
+}
