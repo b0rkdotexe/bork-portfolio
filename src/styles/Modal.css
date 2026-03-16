@@ -122,6 +122,7 @@
     display: flex;
     height: 100%;
     width: 100%;
+    margin-bottom: 8px;
 
     img, video {
         height: 100%;
@@ -130,28 +131,30 @@
     }
 }
 
-#additional-media {
+#additional-media-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 8px;
+    width: 100%;
 
-    img, video {
-        width: 100%;
-        object-fit: contain;
-    }
-
-    div {
+    #additional-media {
         margin-bottom: 8px;
-    }
 
-    p {
-        display: flex;
-        justify-content: center;
-        margin: 0px 0px 8px 0px;
+        p {
+            display: flex;
+            justify-content: center;
+            margin: 0px 0px 8px 0px;
 
-        font-size: 12px;
-        text-align: center;
-        color: rgb(141, 141, 141);
+            font-size: 12px;
+            text-align: center;
+            color: rgb(141, 141, 141);
+        }
+
+        img, video {
+            height: min-content;
+            width: 100%;
+            max-height: 60vh;
+            object-fit: contain;
+        }
     }
 }

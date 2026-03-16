@@ -1,7 +1,6 @@
 #item-container {
     display: block;
     overflow: hidden;
-    cursor: pointer;
 
     #modal-view {
         border-radius: 4px;
@@ -11,6 +10,7 @@
         object-fit: cover;
         object-position: center center;
         aspect-ratio: 1 / 1;
+        cursor: pointer;
     }
 
     #modal-view:hover {

@@ -40,10 +40,10 @@ const Modal = ({ title, tags, description, blogLink, media, additionalMedia, chi
                                     <video src={media.dataPath} autoPlay muted loop />
                                 )}
                             </div>
-                            {additionalMedia && <div id="additional-media">
+                            {additionalMedia && <div id="additional-media-container">
                                 {additionalMedia?.map((item: Media, index) => {
                                     return (
-                                        <div key={index}>
+                                        <div key={index} id="additional-media">
                                             {
                                             !item.isVideo ? 
                                                 (
@@ -69,8 +69,8 @@ const Modal = ({ title, tags, description, blogLink, media, additionalMedia, chi
                                 </div>
                                 {tags && 
                                     <div id="hashtag-container">
-                                        {tags.map(tag => (
-                                            <Hashtag text={tag} />
+                                        {tags.map((tag, index) => (
+                                            <Hashtag key={index} text={tag} />
                                         ))}
                                     </div>
                                 }
