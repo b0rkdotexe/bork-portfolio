@@ -31,7 +31,7 @@ const { src, isVideo, title, tags, description, blogLink, additionalMedia } =
             !isVideo ? (
                 <Image id="modal-view" src={src} alt={title} />
             ) : (
-                <video id="modal-view" src={src} autoplay muted loop playsInline />
+                <video id="modal-view" src={src} autoplay muted loop playsinline preload="auto" />
             )
         }
     </Modal>
