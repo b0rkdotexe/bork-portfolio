@@ -49,7 +49,7 @@ const Modal = ({ title, tags, description, blogLink, media, additionalMedia, chi
                                                 (
                                                     <img src={item.dataPath} />
                                                 ) : (
-                                                    <video src={item.dataPath} autoPlay muted loop />
+                                                    <video src={item.dataPath} autoPlay muted loop playsInline />
                                                 )
                                             }
                                             {item.caption && <p>{item.caption}</p>}
