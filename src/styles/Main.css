@@ -88,11 +88,8 @@
             flex-direction: row;
 
             ul {
-                margin: 8px 0px;
-            }
-    
-            li {
-                margin: 2px 0px
+                margin: 0px 0px;
+                padding-left: 24px;
             }
         }
 
