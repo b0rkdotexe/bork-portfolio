@@ -12,95 +12,206 @@ import bluesky from "../assets/icons/bluesky.png";
 import instagram from "../assets/icons/instagram.png";
 import itchio from "../assets/icons/itchio.png";
 import testVideo from "../assets/test_video.mp4"
-import testImg from "../assets/sponge.jpg"
+import testImg from "../assets/sponge.jpg";
 
+// PicoCAD Shader
+import fanta1 from "../assets/portfolio_pieces/fanta/picocad-shader-demo.webm";
+import fanta2 from "../assets/portfolio_pieces/fanta/picocad-shader-graph.webm";
+
+// WattStop
+import wattstop1 from "../assets/portfolio_pieces/wattstop/watt-stop-demo.webm";
+import wattstop2 from "../assets/portfolio_pieces/wattstop/background_demo_v2.png";
+import wattstop3 from "../assets/portfolio_pieces/wattstop/asset_workspace.mp4";
+
+// Clouds
+import cloud1 from "../assets/portfolio_pieces/misc_pixelart/cowboy_desert.png";
+import cloud2 from "../assets/portfolio_pieces/misc_pixelart/yellow_plane.png";
+
+// Lich
+import lich from "../assets/portfolio_pieces/misc_pixelart/lich.mp4";
+import hornydude from "../assets/portfolio_pieces/misc_pixelart/horny_dude.png";
+
+// Fire Monk
+import monk1 from "../assets/portfolio_pieces/fire_monk/fire1gbg.mp4"
+import monk2 from "../assets/portfolio_pieces/fire_monk/atk_2.mp4"
+import monk3 from "../assets/portfolio_pieces/fire_monk/atk_1.mp4"
+import monk4 from "../assets/portfolio_pieces/fire_monk/explosion_spritesheet.png"
+
+// Slick Road
+import slick1 from "../assets/portfolio_pieces/slick_road/jacket-demo-Trim.webm"
+import slick2 from "../assets/portfolio_pieces/slick_road/cover_big.png"
+import slick3 from "../assets/portfolio_pieces/slick_road/slick_road_dev.png"
+import slick4 from "../assets/portfolio_pieces/slick_road/snowman_full_sheet.png"
+
+// Water Color
+import watercolor1 from "../assets/portfolio_pieces/misc_pixelart/quartz_bush_rev.png";
+import watercolor2 from "../assets/portfolio_pieces/misc_pixelart/grassy_berge_sq.png";
+import watercolor3 from "../assets/portfolio_pieces/misc_pixelart/message_recolor.png";
+
+// Squidy
+import squidy from "../assets/portfolio_pieces/misc_pixelart/shell_car.mp4";
+
+// Misc
+import magic from "../assets/portfolio_pieces/misc_pixelart/magic_hallows.mp4";
+import starfield from "../assets/portfolio_pieces/misc_pixelart/new_tileset_sample.png";
+import miles from "../assets/portfolio_pieces/misc_pixelart/miles_concept.png";
 
 const gallery = [
     {
-        data: testVideo,
-        title: "Testing Testing",
-        tags: ["hello", "tags"],
-        description: "Testing Description",
+        data: fanta1,
+        title: "Mock PicoCAD Shader",
+        tags: ["techart", "blender"],
+        description: "This was a practice project I started working on to get some experience with low poly modeling and shader creation in Blender.",
         isVideo: true,
         blogLink: "",
         additionalMedia: [
             {
-                dataPath: testImg.src,
-                isVideo: false
-            },
-            {
-                dataPath: testVideo,
+                dataPath: fanta2,
                 isVideo: true
             },
-            {
-                dataPath: testImg.src,
-                isVideo: false
-            }
         ],
     },
     {
-        data: testImg,
-        title: "Testing",
-        description: "Testing Description",
-        isVideo: false,
+        data: wattstop1,
+        title: "Making WattStop",
+        tags: ["gamedev", "pixelart"],
+        description: " \
+            I'm making a game called WattStop, where you play as an underpaid pitstop tech. Your job is to keep the charging station running smoothly so you don't get fired.\
+            \n Originally, this project for was a submission for the Bigmode 2025 Game Jam, but I decided to make into a full fledged game as I came up with more and more ideas for it. You can follow the development process on my blog if you're interested. \
+            ",
+        isVideo: true,
         blogLink: "",
         additionalMedia: [
             {
-                dataPath: testImg.src,
+                dataPath: wattstop3,
+                isVideo: true,
+                caption: "New assets for an update"
+            },
+            {
+                dataPath: wattstop2.src,
                 isVideo: false,
-                caption: "Test caption for image"
-            },
-            {
-                dataPath: testVideo,
-                isVideo: true
-            },
-            {
-                dataPath: testImg.src,
-                isVideo: false
+                caption: "Giving the main scene a makeover"
             }
         ],
     },
     {
-        data: testImg,
-        title: "Testing",
-        description: "Testing Description",
+        data: cloud1,
+        title: "Cloud Study #1",
+        tags: ["pixelart"],
+        description: "Part of an illustration series I was working to practice rendering clouds.",
         isVideo: false,
         blogLink: "",
     },
     {
-        data: testVideo,
-        title: "Testing",
-        description: "Testing Description",
-        isVideo: true,
-        blogLink: "",
-    },
-    {
-        data: testVideo,
-        title: "Testing",
-        description: "Testing Description",
-        isVideo: true,
-        blogLink: "",
-    },
-    {
-        data: testImg,
-        title: "Testing",
-        description: "Testing Description",
+        data: cloud2,
+        title: "Cloud Study #2",
+        tags: ["pixelart"],
+        description: "Part of an illustration series I was working to practice rendering clouds.",
         isVideo: false,
         blogLink: "",
     },
     {
-        data: testImg,
-        title: "Testing",
-        description: "Testing Description",
+        data: lich,
+        title: "The Lich",
+        tags: ["pixelart"],
+        description: "Part of a series I started working on. I want to create a game or story based around a cast of necromancer skeleton characters.",
+        isVideo: true,
+        blogLink: "",
+        additionalMedia: [
+            {
+                dataPath: hornydude.src,
+                isVideo: false,
+                caption: "Unfinished character. He'll be the tankiest of the group."
+            }
+        ],
+    },
+    {
+        data: monk1,
+        title: "Fire Mage",
+        tags: ["pixelart"],
+        description: "This is another character for a game idea that I had. Some kind of wizard/mage Beat 'Em Up.",
+        isVideo: true,
+        blogLink: "",
+        additionalMedia: [
+            {
+                dataPath: monk2,
+                isVideo: true,
+            },
+            {
+                dataPath: monk3,
+                isVideo: true,
+            },
+            {
+                dataPath: monk4.src,
+                isVideo: false,
+            },
+        ],
+    },
+    {
+        data: slick1,
+        title: "Slick Road Ahead",
+        tags: ["gamedev", "pixelart"],
+        description: "This was a submission for the Bigmode 2026 Game Jam that I worked on with my friend. I handled the animation/art related coding and I did all of the art for the game.",
+        isVideo: true,
+        blogLink: "",
+        additionalMedia: [
+            {
+                dataPath: slick2.src,
+                isVideo: false,
+            },
+            {
+                dataPath: slick3.src,
+                isVideo: false,
+            },
+            {
+                dataPath: slick4.src,
+                isVideo: false,
+            },
+        ],
+    },
+    {
+        data: watercolor1,
+        title: "Watercolor Style Study",
+        tags: ["pixelart"],
+        description: "A small series of pieces I made to study one of my favorite pixel artists, Franek.",
         isVideo: false,
+        blogLink: "",
+        additionalMedia: [
+            {
+                dataPath: watercolor2.src,
+                isVideo: false,
+            },
+            {
+                dataPath: watercolor3.src,
+                isVideo: false,
+            }
+        ],
+    },
+    {
+        data: squidy,
+        title: "Shell Car Squidward",
+        tags: ["pixelart"],
+        description: "Silly animation practice that I did a long time ago.",
+        isVideo: true,
         blogLink: "",
     },
     {
-        data: testVideo,
-        title: "Testing",
-        description: "Testing Description",
+        data: magic,
+        title: "Miscellaneous Concept Work",
+        tags: ["pixelart"],
+        description: "These are just some random samples of concept that I have made for previous game projects or ideas.",
         isVideo: true,
         blogLink: "",
+        additionalMedia: [
+            {
+                dataPath: starfield.src,
+                isVideo: false,
+            },
+            {
+                dataPath: miles.src,
+                isVideo: false,
+            }
+        ],
     },
 ]
 ---

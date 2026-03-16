@@ -25,6 +25,7 @@
 #modal-padding {
     display: flex;
     min-width: 50%;
+    max-width: 80%;
     height: 80%;
     border-radius: 4px;
     background-color: white;

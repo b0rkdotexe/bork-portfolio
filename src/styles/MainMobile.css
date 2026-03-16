@@ -17,6 +17,8 @@
         "header"
         "gallery"
         "card";
+
+        gap: 8px;
     }
 
     #sidebar {
