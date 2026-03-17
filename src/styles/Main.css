@@ -89,7 +89,9 @@
 
             ul {
                 margin: 0px 0px;
+                margin-left: 16px;
                 padding-left: 24px;
+                justify-content: space-around;
             }
 
             a, a:visited, a:visited {
