@@ -67,6 +67,11 @@ const Modal = ({ title, tags, description, blogLink, media, additionalMedia, chi
                                 <div id="description">
                                     <p>{description}</p>
                                 </div>
+                                {blogLink &&
+                                    <div id="link-container">
+                                        <a href='https://blog.borkdotexe.com/posts/gamedev/2026-01-13_Taking-Out-the-Scaffolding.html'>{"More >"}</a>
+                                    </div>
+                                }
                                 {tags && 
                                     <div id="hashtag-container">
                                         {tags.map((tag, index) => (
@@ -74,7 +79,6 @@ const Modal = ({ title, tags, description, blogLink, media, additionalMedia, chi
                                         ))}
                                     </div>
                                 }
-                                {/* link to blog; under construction */}
                             </div>
                         </div>
                     </div>
