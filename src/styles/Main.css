@@ -91,6 +91,18 @@
                 margin: 0px 0px;
                 padding-left: 24px;
             }
+
+            a, a:visited, a:visited {
+                color: #e2c2db;
+                font-weight: bold;
+                text-decoration: none;
+            }
+
+            a:hover {
+                color: #ffffff;
+                font-weight: bold;
+                text-decoration: underline;
+            }
         }
 
         #email {
