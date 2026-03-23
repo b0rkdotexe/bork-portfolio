@@ -17,6 +17,11 @@ import bork from "../assets/icons/bork.png";
 import fanta1 from "../assets/portfolio_pieces/fanta/picocad-shader-demo.webm";
 import fanta2 from "../assets/portfolio_pieces/fanta/picocad-shader-graph.webm";
 
+// Compositor Outline
+import trophy1 from "../assets/portfolio_pieces/trophy/compositor_demo.png";
+import trophy2 from "../assets/portfolio_pieces/trophy/compositor_demo.webm";
+import trophy3 from "../assets/portfolio_pieces/trophy/outline_concept.webm";
+
 // WattStop
 import wattstop1 from "../assets/portfolio_pieces/wattstop/watt-stop-demo.webm";
 import wattstop2 from "../assets/portfolio_pieces/wattstop/background_demo_v2.png";
@@ -90,6 +95,29 @@ const gallery = [
                 dataPath: wattstop2.src,
                 isVideo: false,
                 caption: "Giving the main scene a makeover"
+            }
+        ],
+    },
+    {
+        data: trophy2,
+        title: "Compositor Outline Technique",
+        tags: ["blender", "techart"],
+        description: "\
+                        This was a little project that I made for a kickball flyer. I was trying different ways to achieve this kinda toony outline look and \
+                        I ended up using some object modifiers, view layers, and the compositor to get something that I was happy with.\
+                    ",
+        isVideo: true,
+        blogLink: "",
+        additionalMedia: [
+            {
+                dataPath: trophy1.src,
+                isVideo: false,
+                caption: "Compositor node tree"
+            },
+            {
+                dataPath: trophy2,
+                isVideo: true,
+                caption: "This is basically the idea"
             }
         ],
     },
