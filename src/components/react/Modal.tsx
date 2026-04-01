@@ -69,7 +69,7 @@ const Modal = ({ title, tags, description, blogLink, media, additionalMedia, chi
                                 </div>
                                 {blogLink &&
                                     <div id="link-container">
-                                        <a href='https://blog.borkdotexe.com/posts/gamedev/2026-01-13_Taking-Out-the-Scaffolding.html'>{"More >"}</a>
+                                        <a href={blogLink}>{"More >"}</a>
                                     </div>
                                 }
                                 {tags && 
